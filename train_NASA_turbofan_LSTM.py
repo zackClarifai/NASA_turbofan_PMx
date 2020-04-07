@@ -13,9 +13,9 @@ from sklearn.metrics import confusion_matrix, recall_score, precision_score
 from keras.models import Sequential,load_model
 from keras.layers import Dense, Dropout, LSTM
 
-#os.system('wget https://raw.githubusercontent.com/umbertogriffo/Predictive-Maintenance-using-LSTM/master/Dataset/PM_truth.txt')
-#os.system('wget https://raw.githubusercontent.com/umbertogriffo/Predictive-Maintenance-using-LSTM/master/Dataset/PM_test.txt')
-#os.system('wget https://raw.githubusercontent.com/umbertogriffo/Predictive-Maintenance-using-LSTM/master/Dataset/PM_train.txt')
+os.system('wget https://raw.githubusercontent.com/zackClarifai/NASA_turbofan_PMx/master/data/PM_truth.txt')
+os.system('wget https://raw.githubusercontent.com/zackClarifai/NASA_turbofan_PMx/master/data/PM_test.txt')
+os.system('wget https://raw.githubusercontent.com/zackClarifai/NASA_turbofan_PMx/master/data/PM_train.txt')
 
 # Read in train time series
 train_df = pd.read_csv('PM_train.txt', sep=" ", header=None)
