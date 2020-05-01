@@ -209,8 +209,6 @@ print(seq_array_test_last.shape)
 
 # Similarly, we pick the labels
 
-#print("y_mask")
-# serve per prendere solo le label delle sequenze che sono almeno lunghe 50
 y_mask = [len(test_df[test_df['id']==id]) >= sequence_length for id in test_df['id'].unique()]
 print("y_mask")
 print(y_mask)
